@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Электронный учебник. Операции С++. Операции присваивания</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Операции языка программирования С++</h2>
+    </div>
+    <div class="content">
+        <ul class="menu">
+            <li><a href="http://localhost:63342/KTO8/index.html">Вступление</a></li>
+            <li><a href="http://localhost:63342/KTO8/math.html">Математические операции</a></li>
+            <li><a href="http://localhost:63342/KTO8/assignment.html">Операции присваивания</a></li>
+            <li><a href="http://localhost:63342/KTO8/relation.html">Операции отношения</a></li>
+            <li><a href="http://localhost:63342/KTO8/pointer.html">Указатель. Определение адреса переменной</a></li>
+            <li><a href="http://localhost:63342/KTO8/others.html">Другие операции</a></li>
+            <li><a href="http://localhost:63342/KTO8/table.html">Таблица приоритетов операций языка С++</a></li>
+            <li><a href="http://localhost:63342/KTO8/test.html">Тестирование</a></li>
+            <li><a href="http://localhost:63342/KTO8/biblio.html">Библиографический список</a></li>
+        </ul>
+        <div class="content-text">
+            <div class="block"><h3>Операции присваивания</h3>
+            <p>В языке С++ знак равенства не означает "равно". Он означает операцию присваивания некоторого значения. В одной строке может стоять больше одной операции присваивания =.</p>
+            <div class="example">
+                <p class="example-head">Пример.</p>
+                a=b=c=d=100;
+            </div>
+            <p>Знак = всегда означает: "переменной слева присвоить значение, стоящее справа ".
+                Операция выполняется справа налево. Поэтому первой значение 100 получает переменная d, затем с, b и а.
+            </p>
+            <p>Знак присвоить может стоять даже внутри математического выражения:</p>
+            <p class="example">value=5+(r=9-c)</p>
+            <p>Присваивание имеет более высокий приоритет, чем сложение и вычитание.
+                Поэтому сначала переменной r будет присвоено значение <span class="example">9-с</span>. А затем переменная value получит значение <span class="example">5+9-с</span>.
+            </p>
+            </div>
+        </div>
+        <div class="block">
+            <h3>Составное присваивание</h3>
+            <p>При написании программы часто требуется изменить значение переменной.
+                Например, требуется взять текущее значение переменной, прибавить или умножить это значение на какое-то выражение, а затем присвоить это значение той же переменной.
+                Такие операции выполняют операторы составного присваивания.</p>
+            <table border="2px">
+                <thead><tr>
+                    <th>Операция</th><th>Пример</th><th>Эквивалент</th>
+                </tr></thead>
+                <tbody><tr>
+                    <td>+ =</td><td>B+ = 500;</td><td>B= b+ 500;</td>
+                </tr>
+                <tr>
+                    <td>- =</td><td>С- = 50;</td><td>C = с - 50;</td>
+                </tr>
+                <tr>
+                    <td>* =	</td><td>D* = 1.2;</td><td>D = d*1.2;</td>
+                </tr>
+                <tr>
+                    <td>/ =	</td><td>F/ = 50;</td><td>f = f/.50;</td>
+                </tr>
+                <tr>
+                    <td>% =	</td><td>m% = 7;</td><td>M = m% 7;</td>
+                </tr>
+                </tbody>
+            </table>
+
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="author">
+        <span class="author-name">Туркина А.В.</span>
+    </div>
+</div>
+</body>
+</html>

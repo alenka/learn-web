@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Электронный учебник. Операции С++</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Операции языка программирования С++</h2>
+    </div>
+    <div class="content">
+        <ul class="menu">
+            <li><a href="http://localhost:63342/KTO8/index.html">Вступление</a></li>
+            <li><a href="http://localhost:63342/KTO8/math.html">Математические операции</a></li>
+            <li><a href="http://localhost:63342/KTO8/assignment.html">Операции присваивания</a></li>
+            <li><a href="http://localhost:63342/KTO8/relation.html">Операции отношения</a></li>
+            <li><a href="http://localhost:63342/KTO8/pointer.html">Указатель. Определение адреса переменной</a></li>
+            <li><a href="http://localhost:63342/KTO8/others.html">Другие операции</a></li>
+            <li><a href="http://localhost:63342/KTO8/table.html">Таблица приоритетов операций языка С++</a></li>
+            <li><a href="http://localhost:63342/KTO8/test.html">Тестирование</a></li>
+            <li><a href="http://localhost:63342/KTO8/biblio.html">Библиографический список</a></li>
+        </ul>
+        <div class="content-text">
+            <div class="block">
+                <h3>Преобразование типов</h3>
+                <p>Чаще всего Вам не надо беспокоиться об автоматическом преобразовании типов. Однако, если Вы смешивает беззнаковые переменные с переменными других типов, могут возникнуть проблемы.
+                    Точность результата может быть потеряна. Поэтому необходимо произвести временное изменение типов.</p>
+                <div class="example">
+                    <p class="example-head">Формат</p>
+                    (тип данных) выражение
+                </div>
+                <p>Тип данных - это любой допустимый тип.</p>
+                <p>Выражение - переменная, константа или выражение.</p>
+                <div class="example">
+                    <p class="example-head">Пример</p>
+                    v=(double)age*f;
+                </div>
+                <p>- переменная age временно преобразуется к типу с плавающей точкой двойной точности и умножается на переменную f.</p>
+                <a href="http://localhost:63342/KTO8/biblio.html">Подробнее [2]</a>
+            </div>
+                <div class="block">
+                    <h3>Операция "запятая"</h3>
+                    <p>Дополнительная операция (,) не работает непосредственно с данными, а приводит к вычислению выражения слева направо.
+                        Эта операция позволяет Вам использовать в одной строке несколько выражений, разделенных запятой.</p>
+                    <div class="example"><p class="example-head">Пример 1</p>
+                        main()
+                        <br> {
+                        <br>int i = 10,
+                        <br>j = 25;
+                        <br>}
+                    </div>
+                    <div class="example">
+                        <p class="example-head">Пример 2</p>
+                        i = 10;
+                        <br>j=(i=12,i+8);
+                    </div>
+                    <p>Результат выполнения: j=20. Сначала i получает значение 10, затем использование операции "запятая" приведет к тому, что i получит значение 12, а затем значение i+8, т.е. 12+8=20. Результат будет присвоен j.</p>
+                </div>
+            <div class="block">
+                <h3>Оператор ?:</h3>
+                <p class="example">(Условие) ? (выражение1):(выражение2)</p>
+                <p>Если условие истинно, то выполняется выражение1, а если ложно, то выражение2.</p>
+                <div class="example">
+                    <p class="example-head">Пример</p>
+                    (а>b) ? (ans =10):(ans=25);
+                    <br/><br/>или <br/><br/>
+                    ans=(a>b)?(10):(25);<br/>
+                </div>
+                    Если а>b, то переменная ans получается значение 10, иначе - значение 0.25<br/>
+                <div class="task"><p class="task-head">Задание</p>
+                Запишите при помощи оператора ?: действия: "Если х больше нуля, y присвоить значение x, иначе значение -x".
+                    </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="author">
+        <span class="author-name">Туркина А.В.</span>
+    </div>
+</div>
+</body>
+</html>

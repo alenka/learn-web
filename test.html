@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Электронный учебник. Операции С++</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Операции языка программирования С++</h2>
+    </div>
+    <div class="content">
+        <ul class="menu">
+            <li><a href="http://localhost:63342/KTO8/index.html">Вступление</a></li>
+            <li><a href="http://localhost:63342/KTO8/math.html">Математические операции</a></li>
+            <li><a href="http://localhost:63342/KTO8/assignment.html">Операции присваивания</a></li>
+            <li><a href="http://localhost:63342/KTO8/relation.html">Операции отношения</a></li>
+            <li><a href="http://localhost:63342/KTO8/pointer.html">Указатель. Определение адреса переменной</a></li>
+            <li><a href="http://localhost:63342/KTO8/others.html">Другие операции</a></li>
+            <li><a href="http://localhost:63342/KTO8/table.html">Таблица приоритетов операций языка С++</a></li>
+            <li><a href="http://localhost:63342/KTO8/test.html">Тестирование</a></li>
+            <li><a href="http://localhost:63342/KTO8/biblio.html">Библиографический список</a></li>
+        </ul>
+        <div class="content-text">
+            <h3>Упражнения</h3>
+
+            <form id="test-form"></form>
+
+            <!--<div class="test">-->
+            <!--<p class="test-head">Значение true имеет выражение</p>-->
+            <!--<input type="radio" name="test1" value="0" onclick="CheckRadio1(0)">-->
+            <!--5 < 8 || 5 < 10<br>-->
+            <!--<input type="radio" name="test1" value="1" onclick="CheckRadio1(1)">-->
+            <!--5 == 5 && 4 == 2<br>-->
+            <!--<input type="radio" name="test1" value="2" onclick="CheckRadio1(3)">-->
+            <!--5 > 8 && 5 > 10<br>-->
+            <!--<textarea rows="6" cols="40" name="rez" readonly=""></textarea><br/>-->
+
+            <!--<p class="test-head">Предположим, все переменные имеют тип int. Переменная х имеет значение 6 в-->
+            <!--выражении</p>-->
+            <!--<input type="radio" name="test1" value="0" onclick="CheckRadio1(0)">-->
+            <!--х = (29+7)/2*3 54(а не 6). Результат 6 можно получить в случае (29 + 7)/(2*3)<br>-->
+            <!--<input type="radio" name="test1" value="1" onclick="CheckRadio1(1)">-->
+            <!--x = (int)3.8 + 3.3<br>-->
+            <!--<input type="radio" name="test1" value="2" onclick="CheckRadio1(3)">-->
+            <!--y = x = (2+3)/4-->
+            <!--<textarea rows="6" cols="40" name="rez" readonly=""></textarea><br/>-->
+
+            <!--<p class="test-head">Какой оператор используется в SQL для создания структуры таблицы?</p>-->
+            <!--<input type="radio" name="test1" value="0" onclick="CheckRadio1(0)">-->
+            <!--New Table<br>-->
+            <!--<input type="radio" name="test1" value="1" onclick="CheckRadio1(1)">-->
+            <!--Create Table<br>-->
+            <!--<input type="radio" name="test1" value="2" onclick="CheckRadio1(3)">-->
+            <!--Create<br>-->
+            <!--<textarea rows="6" cols="40" name="rez" readonly=""></textarea>-->
+            <!--</div>-->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="author">
+        <span class="author-name">Туркина А.В.</span>
+    </div>
+</div>
+<script src="student-test.js"></script>
+<script>
+    var test = new StudentTest();
+    test.addQuestion('Значение true имеет выражение', '5 < 8 || 5 < 10', [
+        ['5 == 5 && 4 == 2', 'потому что ты дурак'],
+        ['5 > 8 && 5 > 10', 'потому что ты не прав']
+    ]);
+    test.addQuestion('Значение true имеет выражение', '5 < 8 || 5 < 10', [
+        ['5 == 5 && 4 == 2', 'потому что ты дурак'],
+        ['5 > 8 && 5 > 10', 'потому что ты не прав']
+    ]);
+    test.addQuestion('Значение true имеет выражение', '5 < 8 || 5 < 10', [
+        ['5 == 5 && 4 == 2', 'потому что ты дурак'],
+        ['5 > 8 && 5 > 10', 'потому что ты не прав']
+    ]);
+    test.addQuestion('Значение true имеет выражение', '5 < 8 || 5 < 10', [
+        ['5 == 5 && 4 == 2', 'потому что ты дурак'],
+        ['5 > 8 && 5 > 10', 'потому что ты не прав']
+    ]);
+
+    test.render(document.getElementById('test-form'));
+</script>
+</body>
+</html>

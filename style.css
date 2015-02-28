@@ -1,0 +1,153 @@
+body {
+    padding: 0;
+    font-family: Helvetica, serif;
+    font-size: 100%;
+    color: #1C1C1C;
+    background: #F5FFFA;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.menu {
+    width: 300px;
+    float: left;
+}
+
+.menu > li {
+    list-style: none;
+    margin: 5px;
+}
+
+a:hover {
+    color: #4169E1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 900px;
+    float: left;
+}
+
+.list > li {
+    margin: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.author {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.example {
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    margin: 2px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.example-head {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color: #000080;
+    padding: 2px;
+    height: 20px;
+    font-size: 17px;
+}
+
+.block {
+    background: #F0F8FF;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 850px;
+    float: right;
+}
+
+.content-text > .block h3 {
+    margin: 4px;
+}
+
+.content-text > .block p {
+    margin: 5px;
+}
+
+table {
+    padding: 3px;
+}
+
+.task {
+    color: black;
+    font-size: 15px;
+    font-family: Geneva;
+    margin: 2px;
+    padding: 2px;
+    border: inset;
+    border-color: #4169E1;
+    border-radius: 1px;
+}
+
+.task-head {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color: #2E8B57;
+    margin: 0;
+    padding: 2px;
+    height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.test {
+    font-family: monospace;
+    background: #F5FFFA;
+    margin: 0;
+    padding: 5px;
+    width: 800px;
+    float: left;
+    font-size: 15px;
+}
+
+.test-head {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 2px;
+    height: 20px;
+    font-size: 17px;
+}
+
+.question-item {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #999;
+}
+
+.question-item.passed {
+    background: rgba(94, 242, 136, .1);
+}
+
+.question-item.incorrect {
+    background: rgba(242, 94, 136, .1);
+}
+
+.explanation {
+    min-height: 25px;
+}
